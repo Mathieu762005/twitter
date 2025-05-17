@@ -14,96 +14,109 @@
          rel="stylesheet"
          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
       />
+      <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
    </head>
    <body>
-      <div class="d-flex">
-         <header class="header border" style="width: 30%">
-            <div class="header__bar">
+      <div class="d-flex" style="height: 100vh;">
+         <header class="header d-flex justify-content-end border" style="width: 30%">
+            <div class="header__bar px-2 d-flex flex-column justify-content-between" style="width: 35%">
                <div class="header__top">
                   <div class="header__logo">
                      <a href="#">
-                        <i class="bi bi-twitter-x"></i>
+                        <i class="bi bi-twitter-x text-black fs-3 p-2"></i>
                      </a>
                   </div>
                   <nav class="header__navbar">
-                     <div class="header__link">
-                        <i class="bi bi-house-door-fill"></i>
-                        <a href="#">Home</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-house-door-fill fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Home</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-search"></i>
-                        <a href="#">Explore</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-search fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Explore</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-bell"></i>
-                        <a href="#">Notifications</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-bell fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Notifications</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-envelope"></i>
-                        <a href="#">Messages</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-envelope fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Messages</a>
                      </div>
-                     <div class="header__link">
-                        <a href="#">Grok</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-alexa fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Grok</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-journal"></i>
-                        <a href="#">Lists</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-journal fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Lists</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-bookmark"></i>
-                        <a href="#">Bookmarks</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-bookmark fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Bookmarks</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-suitcase-lg"></i>
-                        <a href="#">Jobs</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-suitcase-lg fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Jobs</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-people"></i>
-                        <a href="#">Communities</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-people fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Communities</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-twitter-x"></i>
-                        <a href="#">Prenium</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-twitter-x fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Prenium</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-apple"></i>
-                        <a href="#">Verified Orgs</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-apple fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Verified Orgs</a>
                      </div>
-                     <div class="header__link">
-                        <i class="bi bi-person"></i>
-                        <a href="#">Profile</a>
+                     <div class="header__link p-2 fs-5 text-decoration-none">
+                        <i class="bi bi-person fs-4"></i>
+                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Profile</a>
                      </div>
                      <div class="header__link dropup-center dropup">
                         <button
-                           class="btn btn-secondary dropdown-toggle"
+                           class="btn btn-secondary dropdown-toggle bg-transparent text-black fs-4 border-0 mb-3"
                            type="button"
                            data-bs-toggle="dropdown"
                            aria-expanded="false"
                         >
-                           <i class="bi bi-gear"></i> More
+                           <i class="bi bi-gear"></i> <span class="ps-2 fw-bold">More</span>
                         </button>
                         <ul class="dropdown-menu">
-                           <li>
-                              <a class="dropdown-item" href="#">Action</a>
+                           <li class="d-flex">
+                              <i class="bi bi-cash-stack fs-4 p-2"></i>
+                              <a class="dropdown-item fw-bold fs-4" href="#">Monetization</a>
                            </li>
-                           <li>
-                              <a class="dropdown-item" href="#">Action two</a>
+                           <li class="d-flex">
+                              <i class="bi bi-arrow-up-right-square fs-4 p-2"></i>
+                              <a class="dropdown-item fw-bold fs-4 p-2" href="#">Ads</a>
                            </li>
-                           <li>
-                              <a class="dropdown-item" href="#">Action three</a>
+                           <li class="d-flex">
+                              <i class="bi bi-mic fs-4 p-2"></i>
+                              <a class="dropdown-item fw-bold fs-4" href="#">Create your Space</a>
+                           </li>
+                           <li class="d-flex">
+                              <i class="bi bi-gear fs-4 p-2"></i>
+                              <a class="dropdown-item fw-bold fs-4" href="#">Settings and privacy</a>
                            </li>
                         </ul>
                      </div>
                   </nav>
-                  <div class="header__post">
-                     <a href="#">Post</a>
+                  <div class="header__post d-flex justify-content-center">
+                     <a class="btn__bleu text-decoration-none bg-primary text-white fw-bold rounded-5" href="#">Post</a>
                   </div>
                </div>
-               <button class="header__bottom">
+               <button class="header__bottom d-flex bg-transparent border-0 mb-3">
                   <div class="header__photo__profil">
-                     <img src="" alt="" />
+                     <img src="img/spotify.png" width="45" alt="" />
                   </div>
-                  <div class="header__profil__name">
+                  <div class="header__profil__name text-start ps-2">
                      <div>
                         <span>Mathieu</span>
                      </div>

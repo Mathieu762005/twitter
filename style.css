@@ -1,0 +1,11 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.btn__bleu {
+    padding: 0.8rem 5.5rem;
+    margin-right: 1rem;
+}
