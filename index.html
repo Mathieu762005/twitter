@@ -1,396 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Twitter</title>
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-         crossorigin="anonymous"
-      />
-      <link
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      />
-      <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <div class="d-flex" style="height: 100vh;">
-         <header class="header d-flex justify-content-end border" style="width: 35%">
-            <div class="header__bar px-2 d-flex flex-column justify-content-between" style="width: 35%">
-               <div class="header__top">
-                  <div class="header__logo">
-                     <a href="#">
-                        <i class="bi bi-twitter-x text-black fs-3 p-2"></i>
-                     </a>
-                  </div>
-                  <nav class="header__navbar">
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-house-door-fill fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Home</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-search fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Explore</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-bell fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Notifications</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-envelope fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Messages</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-alexa fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Grok</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-journal fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Lists</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-bookmark fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Bookmarks</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-suitcase-lg fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Jobs</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-people fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Communities</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-twitter-x fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Prenium</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-apple fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Verified Orgs</a>
-                     </div>
-                     <div class="header__link p-2 fs-5 text-decoration-none">
-                        <i class="bi bi-person fs-4"></i>
-                        <a class="text-decoration-none text-black fw-bold ps-4" href="#">Profile</a>
-                     </div>
-                     <div class="header__link dropup-center dropup">
-                        <button
-                           class="btn btn-secondary dropdown-toggle bg-transparent text-black fs-4 border-0 mb-3"
-                           type="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false"
-                        >
-                           <i class="bi bi-gear"></i> <span class="ps-2 fw-bold">More</span>
-                        </button>
-                        <ul class="dropdown-menu">
-                           <li class="d-flex">
-                              <i class="bi bi-cash-stack fs-4 p-2"></i>
-                              <a class="dropdown-item fw-bold fs-4" href="#">Monetization</a>
-                           </li>
-                           <li class="d-flex">
-                              <i class="bi bi-arrow-up-right-square fs-4 p-2"></i>
-                              <a class="dropdown-item fw-bold fs-4 p-2" href="#">Ads</a>
-                           </li>
-                           <li class="d-flex">
-                              <i class="bi bi-mic fs-4 p-2"></i>
-                              <a class="dropdown-item fw-bold fs-4" href="#">Create your Space</a>
-                           </li>
-                           <li class="d-flex">
-                              <i class="bi bi-gear fs-4 p-2"></i>
-                              <a class="dropdown-item fw-bold fs-4" href="#">Settings and privacy</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </nav>
-                  <div class="header__post d-flex justify-content-center">
-                     <a class="btn__bleu text-decoration-none bg-primary text-white fw-bold rounded-5" href="#">Post</a>
-                  </div>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Twitter</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="d-flex" style="height: 100vh;">
+      <header class="header d-flex justify-content-end border" style="width: 35%">
+         <div class="header__bar px-2 d-flex flex-column justify-content-between" style="width: 35%">
+            <div class="header__top">
+               <div class="header__logo">
+                  <a href="#">
+                     <i class="bi bi-twitter-x text-black fs-3 p-2"></i>
+                  </a>
                </div>
-               <button class="header__bottom d-flex bg-transparent border-0 mb-3">
-                  <div class="header__photo__profil">
-                     <img src="img/spotify.png" width="45" alt="" />
+               <nav class="header__navbar">
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-house-door-fill fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Home</a>
                   </div>
-                  <div class="header__profil__name text-start ps-2">
-                     <div>
-                        <span>Mathieu</span>
-                     </div>
-                     <div>
-                        <span>@Mathieu1343832</span>
-                     </div>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-search fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Explore</a>
                   </div>
-                  <div>
-                     <img src="" alt="" />
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-bell fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Notifications</a>
                   </div>
-               </button>
-            </div>
-         </header>
-         <main class="main border" style="width: 65%">
-            <div class="main__bar d-flex border" style="width: 70%">
-               <div class="main__center" style="width: 80%;">
-                  <div class="main__choix d-flex">
-                     <button class="border-0 bg-transparent py-2" style="width: 50%;">For you</button>
-                     <button class="border-0 bg-transparent py-2" style="width: 50%;">Following</button>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-envelope fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Messages</a>
                   </div>
-                  <div class="main__post d-flex px-2 my- border">
-                     <div class="main__profil pt-2">
-                        <img
-                           src="img/spotify.png"
-                           width="43"
-                           alt="Ma photo de profil"
-                        />
-                     </div>
-                     <div class="main__post__text" style="width: 100%;">
-                        <div class="main__search">
-                           <input
-                              class="form-control border-0 pt-2 fs-4"
-                              type="search"
-                              placeholder="What's happening?"
-                              aria-label="Search"
-                           />
-                        </div>
-                        <div class="main__post__bottom d-flex justify-content-between mt-4 mb-2">
-                           <div class="main__post__icones d-flex">
-                              <div class="px-2">
-                                 <i class="bi bi-image-fill text-primary"></i>
-                              </div>
-                              <div class="px-2">
-                                 <i class="bi bi-filetype-gif text-primary"></i>
-                              </div>
-                              <div class="px-2">
-                                 <i class="bi bi-instagram text-primary"></i>
-                              </div>
-                              <div class="px-2">
-                                 <i class="bi bi-list-ul text-primary"></i>
-                              </div>
-                              <div class="px-2">
-                                 <i class="bi bi-emoji-smile text-primary"></i>
-                              </div>
-                              <div class="px-2">
-                                 <i class="bi bi-calendar2-minus text-primary"></i>
-                              </div>
-                              <div class="px-2">
-                                 <i class="bi bi-geo-alt text-primary"></i>
-                              </div>
-                           </div>
-                           <div>
-                              <button class="border-0 py-1 px-3 rounded-5 fw-bold">Post</button>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-alexa fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Grok</a>
                   </div>
-                  <div class="main__post d-flex">
-                     <div class="main__profil">
-                        <img
-                           src="img/spotify.png"
-                           width="50"
-                           alt="logo spotify"
-                        />
-                     </div>
-                     <div class="main__text">
-                        <div class="main__title">
-                           <span>Spotify France</span>
-                           <span>@spotifyfrance . 3h</span>
-                        </div>
-                        <div class="main__paragraphe">
-                           <span
-                              >Werenoi nous a quittés cette nuit. En seulement
-                              cinq ans, le rappeur de Montreuil aura
-                              définitivement marqué le rap et la musique
-                              française dans son ensemble.
-                              <br />
-                              <br />
-                              Toutes nos condoléances à sa famille et ses
-                              proches.</span
-                           >
-                        </div>
-                        <div class="main__photo">
-                           <img
-                              src="img/Werenoi.jpg"
-                              width="250"
-                              alt="portrais de Werenoi"
-                           />
-                        </div>
-                        <div class="main__like d-flex">
-                           <div class="main__interaction">
-                              <p><i class="bi bi-chat"></i>268</p>
-                           </div>
-                           <div class="main__interaction">
-                              <p><i class="bi bi-share"></i>7.3K</p>
-                           </div>
-                           <div class="main__interaction">
-                              <p><i class="bi bi-heart"></i>48K</p>
-                           </div>
-                           <div class="main__interaction">
-                              <p><i class="bi bi-text-right"></i>1.7M</p>
-                           </div>
-                           <div class="main__partager">
-                              <i class="bi bi-bookmark"></i>
-                           </div>
-                           <div class="main__partager">
-                              <i class="bi bi-download"></i>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-journal fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Lists</a>
                   </div>
-                  <div class="main__post d-flex">
-                     <div class="main__profil">
-                        <img
-                           src="img/deezer.png"
-                           width="50"
-                           alt="logo deezer"
-                        />
-                     </div>
-                     <div class="main__text">
-                        <div class="main__title">
-                           <span>Skin Cub</span>
-                           <span>@skinclub_cases . 3h</span>
-                        </div>
-                        <div class="main__paragraphe">
-                           <span
-                              >Vous en avez assez de votre ancienne tenue ? Il
-                              est temps d'améliorer votre tenue ! Ayez la chance
-                              d'obtenir des skins CS2 rares, échangez vos
-                              favoris et montrez votre nouveau style à chaque
-                              match !
-                              <br />
-                              <br />
-                              Déposez maintenant et obtenez un bonus jusqu'à 100
-                              caisses GRATUITES ! !!</span
-                           >
-                        </div>
-                        <div class="main__photo">
-                           <img
-                              src="img/Werenoi2.jpg"
-                              width="250"
-                              alt="portrais de Werenoi 2"
-                           />
-                        </div>
-                        <div class="main__like d-flex">
-                           <div class="main__interaction">
-                              <p><i class="bi bi-chat"></i>268</p>
-                           </div>
-                           <div class="main__interaction">
-                              <p><i class="bi bi-share"></i>7.3K</p>
-                           </div>
-                           <div class="main__interaction">
-                              <p><i class="bi bi-heart"></i>48K</p>
-                           </div>
-                           <div class="main__interaction">
-                              <p><i class="bi bi-text-right"></i>1.7M</p>
-                           </div>
-                           <div class="main__partager">
-                              <i class="bi bi-bookmark"></i>
-                           </div>
-                           <div class="main__partager">
-                              <i class="bi bi-download"></i>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-bookmark fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Bookmarks</a>
                   </div>
-               </div>
-               <div class="main__aside border">
-                  <div class="main__aside__search d-flex border">
-                     <i class="bi bi-search"></i>
-                     <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="search"
-                        aria-label="Search"
-                     />
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-suitcase-lg fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Jobs</a>
                   </div>
-                  <div class="main__aside__subscribe">
-                     <span>Subscribe to Premium</span>
-                     <p>
-                        Subscribe to unlock new features and if eligible,
-                        receive a share of revenue.
-                     </p>
-                     <button>Subscribe</button>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-people fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Communities</a>
                   </div>
-                  <div class="main__aside__who-to-follow">
-                     <span>Who to follow</span>
-                     <ul class="main__aside__liste">
-                        <li>
-                           <img src="img/city.png" width="50" alt="logo city" />
-                           <div>
-                              <div>
-                                 <span>Erling H...</span>
-                                 <span>@ErlingHaaland</span>
-                              </div>
-                              <button>Follow</button>
-                           </div>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-twitter-x fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Prenium</a>
+                  </div>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-apple fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Verified Orgs</a>
+                  </div>
+                  <div class="header__link p-2 fs-5 text-decoration-none">
+                     <i class="bi bi-person fs-4"></i>
+                     <a class="text-decoration-none text-black fw-bold ps-4" href="#">Profile</a>
+                  </div>
+                  <div class="header__link dropup-center dropup">
+                     <button class="btn btn-secondary dropdown-toggle bg-transparent text-black fs-4 border-0 mb-3"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-gear"></i> <span class="ps-2 fw-bold">More</span>
+                     </button>
+                     <ul class="dropdown-menu">
+                        <li class="d-flex">
+                           <i class="bi bi-cash-stack fs-4 p-2"></i>
+                           <a class="dropdown-item fw-bold fs-4" href="#">Monetization</a>
                         </li>
-                        <li>
-                           <img src="img/psg.png" width="50" alt="logo PSG" />
-                           <div>
-                              <div>
-                                 <span>Paris Sa...</span>
-                                 <span>@parissaintgermain</span>
-                              </div>
-                              <button>Follow</button>
-                           </div>
+                        <li class="d-flex">
+                           <i class="bi bi-arrow-up-right-square fs-4 p-2"></i>
+                           <a class="dropdown-item fw-bold fs-4 p-2" href="#">Ads</a>
                         </li>
-                        <li>
-                           <img
-                              src="img/barca.png"
-                              width="50"
-                              alt="logo barca"
-                           />
-                           <div>
-                              <div>
-                                 <span>Cristiano R...</span>
-                                 <span>@Cristiano</span>
-                              </div>
-                              <button>Follow</button>
-                           </div>
+                        <li class="d-flex">
+                           <i class="bi bi-mic fs-4 p-2"></i>
+                           <a class="dropdown-item fw-bold fs-4" href="#">Create your Space</a>
+                        </li>
+                        <li class="d-flex">
+                           <i class="bi bi-gear fs-4 p-2"></i>
+                           <a class="dropdown-item fw-bold fs-4" href="#">Settings and privacy</a>
                         </li>
                      </ul>
-                     <a href="#">Show more</a>
                   </div>
-                  <div class="main__aside__what's-happening">
-                     <div>
-                        <span>what's-happening</span>
-                     </div>
-                     <div>
-                        <span>trending in france</span>
-                        <span>Maes</span>
-                        <span>11K posts</span>
-                     </div>
-                     <div>
-                        <span>Music . Trending</span>
-                        <span>Werenoi</span>
-                        <span>152K posts</span>
-                     </div>
-                     <div>
-                        <span>trending in france</span>
-                        <span>Marineland</span>
-                        <span>9,278 posts</span>
-                     </div>
-                     <div>
-                        <span>Entrainement . trending</span>
-                        <span>Pedro Pascal</span>
-                        <span>49.6Kposts</span>
-                     </div>
-                     <a href="#">Show more</a>
+               </nav>
+               <div class="header__post d-flex justify-content-center">
+                  <a class="btn__bleu text-decoration-none bg-primary text-white fw-bold rounded-5" href="#">Post</a>
+               </div>
+            </div>
+            <button class="header__bottom d-flex bg-transparent border-0 mb-3">
+               <div class="header__photo__profil">
+                  <img src="img/spotify.png" width="45" alt="" />
+               </div>
+               <div class="header__profil__name text-start ps-2">
+                  <div>
+                     <span>Mathieu</span>
                   </div>
-                  <div class="main__aside__cgu">
-                    <span>Terms of service | Privacy Policy |</span>
-                    <span>Cookie Policy | Accessibility | Ads info |</span>
-                    <span> More ... @2025XCorp.</span>
+                  <div>
+                     <span>@Mathieu1343832</span>
+                  </div>
+               </div>
+               <div>
+                  <img src="" alt="" />
+               </div>
+            </button>
+         </div>
+      </header>
+      <main class="main border" style="width: 65%">
+         <div class="main__bar d-flex border" style="width: 70%">
+            <div class="main__center" style="width: 80%; height: 120vh;">
+               <div class="main__choix d-flex">
+                  <button class="border-0 bg-transparent py-2" style="width: 50%;">For you</button>
+                  <button class="border-0 bg-transparent py-2" style="width: 50%;">Following</button>
+               </div>
+               <div class="main__post d-flex px-3 my- border">
+                  <div class="main__profil pt-2">
+                     <img src="img/spotify.png" width="43" alt="Ma photo de profil" />
+                  </div>
+                  <div class="main__post__text" style="width: 100%;">
+                     <div class="main__search">
+                        <input class="form-control border-0 pt-2 fs-4" type="search" placeholder="What's happening?"
+                           aria-label="Search" />
+                     </div>
+                     <div class="main__post__bottom d-flex justify-content-between mt-4 mb-2">
+                        <div class="main__post__icones d-flex">
+                           <div class="px-2">
+                              <i class="bi bi-image-fill text-primary"></i>
+                           </div>
+                           <div class="px-2">
+                              <i class="bi bi-filetype-gif text-primary"></i>
+                           </div>
+                           <div class="px-2">
+                              <i class="bi bi-instagram text-primary"></i>
+                           </div>
+                           <div class="px-2">
+                              <i class="bi bi-list-ul text-primary"></i>
+                           </div>
+                           <div class="px-2">
+                              <i class="bi bi-emoji-smile text-primary"></i>
+                           </div>
+                           <div class="px-2">
+                              <i class="bi bi-calendar2-minus text-primary"></i>
+                           </div>
+                           <div class="px-2">
+                              <i class="bi bi-geo-alt text-primary"></i>
+                           </div>
+                        </div>
+                        <div>
+                           <button class="border-0 py-1 px-3 rounded-5 fw-bold">Post</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main__post d-flex px-3 py-2 border">
+                  <div class="main__profil">
+                     <img src="img/spotify.png" width="43" alt="logo spotify" />
+                  </div>
+                  <div class="main__text">
+                     <div class="main__title ps-2">
+                        <span class="fw-bold">Spotify France</span>
+                        <span>@spotifyfrance . 3h</span>
+                     </div>
+                     <div class="main__paragraphe ps-2">
+                        <span>Werenoi nous a quittés cette nuit. En seulement
+                           cinq ans, le rappeur de Montreuil aura
+                           définitivement marqué le rap et la musique
+                           française dans son ensemble.
+                           <br />
+                           <br />
+                           Toutes nos condoléances à sa famille et ses
+                           proches.</span>
+                     </div>
+                     <div class="main__photo p-2">
+                        <img src="img/Werenoi.jpg" width="350" alt="portrais de Werenoi" class="rounded-4" />
+                     </div>
+                     <div class="d-flex justify-content-between ps-2">
+                        <div class="main__like d-flex justify-content-between" style="width: 350px;">
+                           <div class="main__interaction">
+                              <p><i class="bi bi-chat"></i> 268</p>
+                           </div>
+                           <div class="main__interaction">
+                              <p><i class="bi bi-share"></i> 7.3K</p>
+                           </div>
+                           <div class="main__interaction">
+                              <p><i class="bi bi-heart"></i> 48K</p>
+                           </div>
+                           <div class="main__interaction">
+                              <p><i class="bi bi-text-right"></i> 1.7M</p>
+                           </div>
+                        </div>
+                        <div class="d-flex">
+                           <div class="main__partager">
+                              <i class="bi bi-bookmark px-3"></i>
+                           </div>
+                           <div class="main__partager">
+                              <i class="bi bi-download"></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main__post d-flex px-3 py-2 border">
+                  <div class="main__profil">
+                     <img src="img/deezer.png" width="43" alt="logo deezer" />
+                  </div>
+                  <div class="main__text">
+                     <div class="main__title ps-2">
+                        <span class="fw-bold">Skin Cub</span>
+                        <span>@skinclub_cases . 3h</span>
+                     </div>
+                     <div class="main__paragraphe ps-2">
+                        <span>Vous en avez assez de votre ancienne tenue ? Il
+                           est temps d'améliorer votre tenue ! Ayez la chance
+                           d'obtenir des skins CS2 rares, échangez vos
+                           favoris et montrez votre nouveau style à chaque
+                           match !
+                           <br />
+                           <br />
+                           Déposez maintenant et obtenez un bonus jusqu'à 100
+                           caisses GRATUITES ! !!</span>
+                     </div>
+                     <div class="main__photo">
+                        <img src="img/Werenoi2.jpg" width="500" alt="portrais de Werenoi 2" class="p-2" />
+                     </div>
+                     <div class="main__like d-flex justify-content-between ps-2">
+                        <div class="d-flex justify-content-between" style="width: 350px;">
+                           <div class="main__interaction">
+                              <p><i class="bi bi-chat"></i> 268</p>
+                           </div>
+                           <div class="main__interaction">
+                              <p><i class="bi bi-share"></i> 7.3K</p>
+                           </div>
+                           <div class="main__interaction">
+                              <p><i class="bi bi-heart"></i> 48K</p>
+                           </div>
+                           <div class="main__interaction">
+                              <p><i class="bi bi-text-right"></i> 1.7M</p>
+                           </div>
+                        </div>
+                        <div class="d-flex">
+                           <div class="main__partager">
+                              <i class="bi bi-bookmark px-3"></i>
+                           </div>
+                           <div class="main__partager">
+                              <i class="bi bi-download"></i>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
-         </main>
-      </div>
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-         crossorigin="anonymous"
-      ></script>
-   </body>
+            <div class="main__aside border" style="height: 100vh;">
+               <div class="main__aside__search d-flex border">
+                  <i class="bi bi-search"></i>
+                  <input class="form-control me-2" type="search" placeholder="search" aria-label="Search" />
+               </div>
+               <div class="main__aside__subscribe">
+                  <span>Subscribe to Premium</span>
+                  <p>
+                     Subscribe to unlock new features and if eligible,
+                     receive a share of revenue.
+                  </p>
+                  <button>Subscribe</button>
+               </div>
+               <div class="main__aside__who-to-follow">
+                  <span>Who to follow</span>
+                  <ul class="main__aside__liste">
+                     <li>
+                        <img src="img/city.png" width="50" alt="logo city" />
+                        <div>
+                           <div>
+                              <span>Erling H...</span>
+                              <span>@ErlingHaaland</span>
+                           </div>
+                           <button>Follow</button>
+                        </div>
+                     </li>
+                     <li>
+                        <img src="img/psg.png" width="50" alt="logo PSG" />
+                        <div>
+                           <div>
+                              <span>Paris Sa...</span>
+                              <span>@parissaintgermain</span>
+                           </div>
+                           <button>Follow</button>
+                        </div>
+                     </li>
+                     <li>
+                        <img src="img/barca.png" width="50" alt="logo barca" />
+                        <div>
+                           <div>
+                              <span>Cristiano R...</span>
+                              <span>@Cristiano</span>
+                           </div>
+                           <button>Follow</button>
+                        </div>
+                     </li>
+                  </ul>
+                  <a href="#">Show more</a>
+               </div>
+               <div class="main__aside__what's-happening">
+                  <div>
+                     <span>what's-happening</span>
+                  </div>
+                  <div>
+                     <span>trending in france</span>
+                     <span>Maes</span>
+                     <span>11K posts</span>
+                  </div>
+                  <div>
+                     <span>Music . Trending</span>
+                     <span>Werenoi</span>
+                     <span>152K posts</span>
+                  </div>
+                  <div>
+                     <span>trending in france</span>
+                     <span>Marineland</span>
+                     <span>9,278 posts</span>
+                  </div>
+                  <div>
+                     <span>Entrainement . trending</span>
+                     <span>Pedro Pascal</span>
+                     <span>49.6Kposts</span>
+                  </div>
+                  <a href="#">Show more</a>
+               </div>
+               <div class="main__aside__cgu">
+                  <span>Terms of service | Privacy Policy |</span>
+                  <span>Cookie Policy | Accessibility | Ads info |</span>
+                  <span> More ... @2025XCorp.</span>
+               </div>
+            </div>
+         </div>
+      </main>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
